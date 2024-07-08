@@ -1,0 +1,105 @@
+main{
+    margin: auto;
+    max-width: 800px;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+main section.intro{
+    padding-bottom: 30px;
+}
+
+main section.intro h3{
+    color: #c4c4c4;
+    font-weight: 400;
+    margin: 0;
+    font-size: 70px;
+}
+
+main section.intro p{
+    font-size: 18px;
+    color: #e8eaea;
+    opacity: 0.8;
+}
+
+main section.timeline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+main section.timeline div.timeline-card{
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+    padding: 0;
+    border-radius: 100px;
+    margin: 0 50px;
+}
+
+main section.timeline div.timeline-card:hover div.timeline-card-details{
+    margin: 40px 0;
+}
+
+main section.timeline div.timeline-card div.timeline-card-header h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+main section.timeline div.timeline-card div.timeline-card-header span{
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+main section.timeline div.timeline-card div.line::before{
+    content: '';
+    position: absolute;
+    background-color: #c4c4c4;
+    border-radius: 100px;
+    width: 130px;
+    height: 2.5px;
+    margin: 12px 0;
+}
+
+main section.timeline div.timeline-card div.timeline-card-details{
+    margin-top: 25px;
+}
+
+main section.timeline div.timeline-card div.timeline-card-details span{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+footer div img{
+    user-select: none;
+    max-width: 800px;
+    border-radius: 50%;
+    display: inline-block;
+    position: fixed;
+    top: 35%;
+    left: 65%;
+    transform: translate(0);
+    opacity: 1;
+    z-index: -1;
+    transition: all 2s ease;
+}
+
+footer div .circle{
+    user-select: none;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #c4c4c4;
+    opacity: 0.3;
+    position: fixed;
+    transform: translateY(0);
+    top: 60%;
+    right: 75%;
+    z-index: -1;
+    transition: all 2s ease;
+}

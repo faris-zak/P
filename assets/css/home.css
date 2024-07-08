@@ -1,0 +1,46 @@
+main{
+    margin: auto;
+    max-width: 800px;
+    opacity: 0;
+    transition: all 1s ease;
+    transform: translateY(-100px);
+}
+
+main section.intro{
+    padding: 20px;
+}
+
+main section.intro .background{
+    width: 700px;
+    height: auto;
+    padding: 100px;
+    background-color: #0c0e188e;
+    border-radius: 100%;
+}
+
+main section.intro h3{
+    color: #c4c4c4;
+    font-weight: 400;
+    margin: 0;
+    font-size: 70px;
+}
+
+main section.intro h1{
+    color: #c4c4c4;
+    padding-left: 35px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 80px;
+}
+
+main section.intro p{
+    font-size: 18px;
+    color: #e8eaea;
+    opacity: 0.8;
+}
+
+main section.intro .intro-buttons{
+    margin-top: 30px;
+    user-select: none;
+}

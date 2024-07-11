@@ -22,16 +22,45 @@ main section.intro p{
     opacity: 0.8;
 }
 
-main section.contact-info p{
-    font-size: 22px;
-    color: #c4c4c4;
+main section.contact-info table tr td{
+    padding-bottom: 30px;
+    padding-left: 10px;
+    font-size: 20px;
 }
 
-main section.contact-info p span{
+main section.contact-info table tr td a{
+    color: #c4c4c4;
+    text-decoration: none;
+}
+
+main section.contact-info table tr td a:hover{
     color: #e8eaea;
 }
 
-main section.contact-form{
+main section.contact-info table tr td:first-child{
+    font-weight: 400;
+}
+
+main section.contact-info table tr td:last-child{
+    font-weight: 600;
+}
+
+
+main section.contact-info table tr td a i{
+    font-size: 22px;
+    position: absolute;
+    opacity: 0;
+}
+
+main section.contact-info table tr td a:hover i{
+    padding-left: 10px;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+
+
+/* main section.contact-form{
     position: absolute;
     width: 300px;
     transform: translate(500px, -250px);
@@ -102,8 +131,7 @@ input.clear:hover{
     background-color: #e8eaea;
     color: black;
     border: 1.6px solid #e8eaea;
-}
-
+} */
 
 footer div img{
     user-select: none;

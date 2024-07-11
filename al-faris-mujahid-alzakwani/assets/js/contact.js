@@ -19,8 +19,6 @@ links.forEach(link => {
 window.onload = () =>{
     userImage.style.transform = 'translateX(300px) translateY(300px)';
     userImage.style.maxWidth = '500px';
-    introSection.style.transform = 'translateX(-80px)';
-    contactSection.style.transform = 'translateX(-80px)';
     shape.style.transform = 'translateX(-200px)';
     mainContent.style.opacity = '1';
 };

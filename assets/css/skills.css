@@ -7,6 +7,7 @@ main{
 
 main section.intro{
     padding-bottom: 30px;
+    max-width: 500px;
 }
 
 main section.intro h3{
@@ -20,6 +21,41 @@ main section.intro p{
     font-size: 18px;
     color: #e8eaea;
     opacity: 0.8;
+}
+
+.skills {
+    width: 100%;
+    max-width: 300px;
+    transform: translate(600px, -260px);
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.skill-bar {
+    width: 80%;
+    background-color: #333;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 6px;
+    background-color: #e8eaea;
+    width: 0;
+    border-radius: 25px;
+    transition: width 1s ease;
 }
 
 footer div img{

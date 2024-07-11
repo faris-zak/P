@@ -2,7 +2,7 @@ const userImage = document.getElementById('userImage');
 const shape = document.getElementById('shape');
 const mainContent = document.querySelector('main');
 const links = document.querySelectorAll('a.fade');
-const timelineanime = document.querySelector('section.timeline');
+const introSection = document.querySelector('section.intro');
 
 links.forEach(link => {
   link.addEventListener('click', (event) => {
@@ -18,6 +18,7 @@ links.forEach(link => {
 window.onload = () =>{
     userImage.style.transform = 'translateX(300px) translateY(300px)';
     userImage.style.maxWidth = '500px';
+    introSection.style.transform = 'translateX(-120px)';
     shape.style.transform = 'translateX(-200px)';
     mainContent.style.opacity = '1';
     timelineanime.style.transform = 'translateY(55px) translateX(-50px)';
@@ -31,6 +32,15 @@ userImage.addEventListener('mouseover', () => {
 userImage.addEventListener('mouseout', () => {
     userImage.style.transform = 'translateX(300px) translateY(300px)';
     userImage.style.maxWidth = '500px';
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const skillLevels = document.querySelectorAll('.skill-level');
+
+  skillLevels.forEach(skillLevel => {
+      const skillPercentage = skillLevel.getAttribute('data-skill');
+      skillLevel.style.width = skillPercentage;
+  });
 });
 
 shape.addEventListener('mouseover', () => {

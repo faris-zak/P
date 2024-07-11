@@ -12,16 +12,11 @@ const hoppies = document.querySelector('section.hoppies');
 links.forEach(link => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
-
-
-    if (introTitle && introInfo && infoTable && hoppies && mainContent) {
-
       mainContent.style.opacity = '0';
-    }
 
     setTimeout(() => {
       window.location.href = event.target.href;
-    }, 1000); // Wait for 1 second before navigating
+    }, 1000);
   });
 });
 

@@ -22,6 +22,50 @@ main section.intro p{
     opacity: 0.8;
 }
 
+main section.embedded-cv embed{
+    border-radius: 20px;
+}
+
+main section.control-cv{
+    position: absolute;
+    transform: translate(530px, -580px);
+}
+
+main section.control-cv a{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 6px 16px;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+main section.control-cv a.download-cv{
+    background-color: transparent;
+    color: #e8eaea;
+    border: 1.6px solid #e8eaea;
+}
+
+main section.control-cv a.download-cv:hover{
+    background-color: #e8eaea;
+    color: black;
+    border: 1.6px solid #e8eaea;
+}
+
+main section.control-cv a.print-cv{
+    background-color: transparent;
+    color: #e8eaea;
+    border: 1.6px solid #e8eaea;
+}
+
+main section.control-cv a.print-cv:hover{
+    background-color: #e8eaea;
+    color: black;
+    border: 1.6px solid #e8eaea;
+}
+
 footer div img{
     user-select: none;
     max-width: 800px;

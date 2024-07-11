@@ -27,6 +27,7 @@ main section.intro p{
     width: 100%;
     max-width: 300px;
     transform: translate(600px, -260px);
+    cursor: default;
 }
 
 h2 {

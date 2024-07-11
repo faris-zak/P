@@ -2,6 +2,7 @@ const userImage = document.getElementById('userImage');
 const shape = document.getElementById('shape');
 const mainContent = document.querySelector('main');
 const links = document.querySelectorAll('a.fade');
+const timelineanime = document.querySelector('section.timeline');
 
 links.forEach(link => {
   link.addEventListener('click', (event) => {
@@ -19,6 +20,7 @@ window.onload = () =>{
     userImage.style.maxWidth = '500px';
     shape.style.transform = 'translateX(-200px)';
     mainContent.style.opacity = '1';
+    timelineanime.style.transform = 'translateY(55px) translateX(-50px)';
 };
 
 userImage.addEventListener('mouseover', () => {

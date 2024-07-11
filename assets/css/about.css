@@ -71,6 +71,7 @@ main section.hoppies div{
     font-size: 17px;
     font-weight: 400;
     border-radius: 100px;
+    transform: translateY(-70px);
 }
 
 main section.hoppies div:hover{

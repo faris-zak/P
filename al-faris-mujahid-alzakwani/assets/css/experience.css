@@ -24,23 +24,22 @@ main section.intro p{
 }
 
 main section.timeline{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
     cursor: default;
 }
 
 main section.timeline div.timeline-card{
     height: auto;
-    width: auto;
+    width: 500px;
+    transform: translate(540px, -280px);
     border-radius: 12px;
     padding: 0;
     border-radius: 100px;
-    margin: 0 50px;
+    margin: 30px 0;
 }
 
-main section.timeline div.timeline-card:hover div.timeline-card-details{
-    margin: 40px 0;
+main section.timeline div.timeline-card:last-child{
+    transform: translate(-28px, -600px);
 }
 
 main section.timeline div.timeline-card div.timeline-card-header h2{
@@ -66,13 +65,31 @@ main section.timeline div.timeline-card div.line::before{
     margin: 12px 0;
 }
 
-main section.timeline div.timeline-card div.timeline-card-details{
-    margin-top: 25px;
+main section.timeline div.timeline-card div.timeline-card-details p{
+    padding: 0;
+    margin: 0;
 }
 
-main section.timeline div.timeline-card div.timeline-card-details span{
+main section.timeline div.timeline-card:first-child div.timeline-card-details{
+    padding-top: 32px;
+    margin: 0;
+}
+
+main section.timeline div.timeline-card:last-child div.timeline-card-details{
+    padding-top: 32px;
+    padding-bottom: 20px;
+    margin: 0;
+
+}
+
+main section.timeline div.timeline-card div.timeline-card-details ul li{
+    padding-bottom: 10px;
+}
+
+main section.timeline div.timeline-card div.timeline-card-footer span{
     font-size: 24px;
     font-weight: 400;
+    color: #c4c4c4;
 }
 
 footer div img{

@@ -24,7 +24,7 @@ main section.intro p{
 }
 main section.awards{
     position: absolute;
-    transform: translate(540px, -300px);
+    transform: translate(540px, -200px);
     cursor: default;
 }
 

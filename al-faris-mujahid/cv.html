@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio | CV</title>
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/cv.css">
+        <link rel="icon" href="assets/images/icon.png">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css'>
+    </head>
+    <body>
+        <nav>
+            <div class="profile-icon">
+                <img id="userIcon" src="assets/images/microsoft.jpg" alt="Image">
+            </div>
+            <div class="pages">
+                <ul>
+                    <li><a class="fade" href="index.html">Home<div class="underline"></div></a></li>
+                    <li><a class="fade" href="about.html">About<div class="underline"></div></a></li>
+                    <li><a class="fade" href="experience.html">Experience<div class="underline"></div></a></li>
+                    <li><a class="fade" href="education.html">Education<div class="underline"></div></a></li>
+                    <li><a class="fade" href="skills.html">Skills<div class="underline"></div></a></li>
+                    <li><a href="#">CV<div class="underline" style="opacity: 1; transform: translateY(-2px);"></div></a></li>
+                </ul>
+            </div>
+            <div class="nav-buttons">
+                <a class="download" href="assets/pdf/cv.pdf" download="cv.pdf">Download CV</a>
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <div class="smallScreen">
+            <img class="screens" src="assets/images/small-screen-mockup.png" alt="Phones & Tablets">
+            <div class="details">
+                <span class="h2">P phones and tablets soon</span>
+                <p class="detail">In the meantime, use a screen with a width 1024 pixels and above.</p>
+            </div>
+        </div>
+
+        <div id="socialMedia" class="sidebar">
+            <ul class="social-media-icons">
+                <li><a id="smIcons" href="#"><i class="fi fi-brands-twitter-alt-circle"></i></a></li>
+                <li><a id="smIcons" href="#"><i class="fi fi-brands-facebook"></i></a></li>
+                <li><a id="smIcons" href="#"><i class="fi fi-brands-linkedin"></i></a></li>
+                <li><a id="smIcons" href="#"><i class="fi fi-brands-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <main>
+            <section class="intro">
+                <div class="intro-header">
+                    <h3>CV</h3>
+                </div>
+                <div class="intro-info">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </section>
+
+            <section class="embedded-cv">
+                <embed src="assets/pdf/cv.pdf" type="application/pdf" width="800px" height="500px">
+            </section>
+
+            <section class="control-cv">
+                    <a class="download-cv" href="assets/pdf/cv.pdf" download="cv.pdf">Download CV</a>
+                    <a class="print-cv" href="assets/pdf/cv.pdf" print="cv.pdf" target="_blank">Print CV</a>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <img id="userImage" src="assets/images/microsoft-pilot.jpeg" alt="Image">
+                <div id="shape" class="circle"></div>
+            </div>
+        </footer>
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/cv.js"></script>
+    </body>
+</html>

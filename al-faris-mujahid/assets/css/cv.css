@@ -1,0 +1,97 @@
+main{
+    margin: auto;
+    max-width: 800px;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+main section.intro{
+    padding-bottom: 30px;
+}
+
+main section.intro h3{
+    color: #c4c4c4;
+    font-weight: 400;
+    margin: 0;
+    font-size: 70px;
+}
+
+main section.intro p{
+    font-size: 18px;
+    color: #e8eaea;
+    opacity: 0.8;
+}
+
+main section.embedded-cv embed{
+    border-radius: 20px;
+}
+
+main section.control-cv{
+    position: absolute;
+    transform: translate(530px, -580px);
+}
+
+main section.control-cv a{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 6px 16px;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+main section.control-cv a.download-cv{
+    background-color: transparent;
+    color: #e8eaea;
+    border: 1.6px solid #e8eaea;
+}
+
+main section.control-cv a.download-cv:hover{
+    background-color: #e8eaea;
+    color: black;
+    border: 1.6px solid #e8eaea;
+}
+
+main section.control-cv a.print-cv{
+    background-color: transparent;
+    color: #e8eaea;
+    border: 1.6px solid #e8eaea;
+}
+
+main section.control-cv a.print-cv:hover{
+    background-color: #e8eaea;
+    color: black;
+    border: 1.6px solid #e8eaea;
+}
+
+footer div img{
+    user-select: none;
+    max-width: 800px;
+    border-radius: 50%;
+    display: inline-block;
+    position: fixed;
+    top: 35%;
+    left: 65%;
+    transform: translate(0);
+    opacity: 1;
+    z-index: -1;
+    transition: all 2s ease;
+}
+
+footer div .circle{
+    user-select: none;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #c4c4c4;
+    opacity: 0.3;
+    position: fixed;
+    transform: translateY(0);
+    top: 60%;
+    right: 75%;
+    z-index: -1;
+    transition: all 2s ease;
+}

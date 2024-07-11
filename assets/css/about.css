@@ -23,6 +23,7 @@ main section.intro p{
 }
 
 main section.info-table{
+    position: absolute;
     padding-bottom: 30px;
     cursor: default;
 }
@@ -56,6 +57,7 @@ main section.hoppies{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 
 main section.hoppies div{
@@ -72,7 +74,7 @@ main section.hoppies div{
     font-size: 18px;
     font-weight: 400;
     border-radius: 100px;
-    transform: translate(550px, -450px);
+    transform: translate(780px, -220px);
 }
 
 main section.hoppies div:hover{

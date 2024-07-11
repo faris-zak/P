@@ -23,7 +23,8 @@ main section.intro p{
     opacity: 0.8;
 }
 main section.awards{
-    transform: translate(600px, -300px);
+    position: absolute;
+    transform: translate(540px, -300px);
     cursor: default;
 }
 

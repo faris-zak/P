@@ -21,12 +21,13 @@ main section.intro p{
     font-size: 18px;
     color: #e8eaea;
     opacity: 0.8;
+    position: absolute;
 }
 
 .skills {
     width: 100%;
     max-width: 300px;
-    transform: translate(600px, -260px);
+    transform: translate(600px, -100px);
     cursor: default;
 }
 

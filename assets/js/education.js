@@ -22,7 +22,7 @@ window.onload = () =>{
     introSection.style.transform = 'translateX(-80px)';
     shape.style.transform = 'translateX(-200px)';
     mainContent.style.opacity = '1';
-    timelineAnime.style.transform = 'translateY(-110px) translateX(-130px)';
+    timelineAnime.style.transform = 'translateY(55px) translateX(-130px)';
 };
 
 userImage.addEventListener('mouseover', () => {

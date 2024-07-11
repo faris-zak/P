@@ -35,6 +35,26 @@ userImage.addEventListener('mouseout', () => {
     userImage.style.maxWidth = '500px';
 });
 
+document.querySelector('.contact-form').addEventListener('submit', function(event) {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var subject = document.getElementById('subject').value;
+  var message = document.getElementById('message').value;
+
+  if (!name || !email || !subject || !message) {
+      alert('Please fill in all fields');
+      event.preventDefault();
+  } else if (!validateEmail(email)) {
+      alert('Please enter a valid email address');
+      event.preventDefault();
+  }
+});
+
+function validateEmail(email) {
+  var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
 shape.addEventListener('mouseover', () => {
     shape.style.opacity = '0.5';
     shape.style.transform = 'translateY(280px)';

@@ -8,7 +8,7 @@ main{
 
 main section.intro{
     padding: 20px;
-    transform: translateX
+    transform: translateX(-100px);
 }
 
 main section.intro .background{

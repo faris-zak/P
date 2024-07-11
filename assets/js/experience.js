@@ -20,7 +20,7 @@ window.onload = () =>{
     userImage.style.maxWidth = '500px';
     shape.style.transform = 'translateX(-200px)';
     mainContent.style.opacity = '1';
-    timelineanime.style.transform = 'translateY(55px)';
+    timelineanime.style.transform = 'translateY(55px) translateX(-50px)';
 };
 
 userImage.addEventListener('mouseover', () => {

@@ -10,7 +10,7 @@ main section.intro{
 }
 
 main section.intro h3{
-    color: #c4c4c4;
+    color: #e8eaea;
     font-weight: 400;
     margin: 0;
     font-size: 70px;
@@ -18,7 +18,7 @@ main section.intro h3{
 
 main section.intro p{
     font-size: 18px;
-    color: #e8eaea;
+    color: #c4c4c4;
     opacity: 0.8;
 }
 
@@ -29,12 +29,14 @@ main section.contact-info table tr td{
 }
 
 main section.contact-info table tr td a{
-    color: #c4c4c4;
+    color: #e8eaea;
     text-decoration: none;
 }
 
 main section.contact-info table tr td a:hover{
-    color: #e8eaea;
+    color: #c4c4c4;
+    text-decoration: underline;
+    text-decoration-color: #0c0e18;
 }
 
 main section.contact-info table tr td:first-child{
@@ -55,7 +57,6 @@ main section.contact-info table tr td a i{
 main section.contact-info table tr td a:hover i{
     padding-left: 10px;
     opacity: 1;
-    text-decoration: underline;
 }
 
 

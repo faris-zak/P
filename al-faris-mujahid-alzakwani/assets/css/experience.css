@@ -11,7 +11,7 @@ main section.intro{
 }
 
 main section.intro h3{
-    color: #c4c4c4;
+    color: #e8eaea;
     font-weight: 400;
     margin: 0;
     font-size: 70px;
@@ -19,7 +19,7 @@ main section.intro h3{
 
 main section.intro p{
     font-size: 18px;
-    color: #e8eaea;
+    color: #c4c4c4;
     opacity: 0.8;
 }
 

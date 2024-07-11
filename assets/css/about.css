@@ -52,9 +52,9 @@ main section.info-table table tr td:last-child{
 }
 
 main section.hoppies{
-    padding-top: 30px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -68,10 +68,11 @@ main section.hoppies div{
     border: 1.6px solid #e8eaea;
     border-radius: 10px;
     padding: 8px 25px;
-    font-size: 17px;
+    margin-bottom: 20px;
+    font-size: 18px;
     font-weight: 400;
     border-radius: 100px;
-    transform: translateY(-70px);
+    transform: translate(550px, -450px);
 }
 
 main section.hoppies div:hover{

@@ -4,30 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="A single-page application for CV" />
-        <title>Portfolio | Home</title>
+        <title>P</title>
         <link rel="stylesheet" href="assets/css/index.css">
-        <link rel="stylesheet" href="assets/css/home.css">
         <link rel="icon" href="assets/images/icon.png">
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css'>
     </head>
     <body>
         <nav>
-            <div class="profile-icon">
-                <img id="userIcon" src="assets/images/microsoft.jpg" alt="Image">
+            <div class="site-icon">
+                <img id="siteIcon" src="assets/images/icon.png" alt="Image">
+                <div class="shape"></div>
             </div>
-            <div class="pages">
+            <div class="sections-buttons">
                 <ul>
-                    <li><a href="#">Home<div class="underline" style="opacity: 1; transform: translateY(-2px);"></div></a></li>
-                    <li><a class="fade" href="about.html">About<div class="underline"></div></a></li>
-                    <li><a class="fade" href="experience.html">Experience<div class="underline"></div></a></li>
-                    <li><a class="fade" href="education.html">Education<div class="underline"></div></a></li>
-                    <li><a class="fade" href="skills.html">Skills<div class="underline"></div></a></li>
-                    <li><a class="fade" href="cv.html">CV<div class="underline"></div></a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#ourCommunity">Our community</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
-            <div class="nav-buttons">
-                <a class="download" href="assets/pdf/cv.pdf" download="cv.pdf">Download CV</a>
-                <a class="fade" href="contact.html">Contact Me</a>
             </div>
         </nav>
 
@@ -39,39 +31,55 @@
             </div>
         </div>
 
-        <div id="socialMedia" class="sidebar">
-            <ul class="social-media-icons">
-                <li><a id="smIcons" href="#"><i class="fi fi-brands-twitter-alt-circle"></i></a></li>
-                <li><a id="smIcons" href="#"><i class="fi fi-brands-facebook"></i></a></li>
-                <li><a id="smIcons" href="#"><i class="fi fi-brands-linkedin"></i></a></li>
-                <li><a id="smIcons" href="#"><i class="fi fi-brands-instagram"></i></a></li>
-            </ul>
-        </div>
-
         <main>
-            <section class="intro">
-                <div class="background">
-                    <div class="intro-header">
-                        <h3>Welcome, I'm</h3>
-                        <h1>Al-Faris Mujahid</h1>
-                    </div>
-                    <div class="intro-info">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat asperiores obcaecati laboriosam saepe dolorem ullam necessitatibus excepturi exercitationem repellat omnis est, consequuntur voluptas recusandae cupiditate id amet laborum, magni provident quisquam, sunt nostrum dignissimos atque. Neque enim officiis voluptatem tempore eum alias qui nam, ipsam magni quasi quae minus. Vel.</p>
-                    </div>
-                    <div class="intro-buttons nav-buttons">
-                        <a class="fade" href="about.html">More info</a>
-                    </div>
+            <section id="about" class="about">
+                <div class="about-content">
+                    <h2 class="title">About P</h2>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel finibus diam, vel ullamcorper ligula. Sed vel fermentum ipsum, sit amet condimentum eros. Donec sed ipsum vel felis faucibus pellentesque. Integer auctor libero at ipsum rutrum, a convallis metus ullamcorper. Integer consectetur, tortor at ullamcorper posuere, felis neque malesuada ligula, at vulputate nisi velit vel turpis. Sed dignissim, mauris vel feugiat bibendum, lectus nunc condimentum felis, vel hendrerit diam dui et velit. Donec vulputate, erat in sagittis malesuada, nisi metus pellentesque nisi, vel cursus orci neque eu neque. Nulla facilisi. Sed ultricies, diam vel cursus lobortis, ligula tellus faucibus ex, ut fe
                 </div>
+            </section>
+
+            <section id="ourCommunity" class="our-community">
+                <div class="our-community-content">
+                    <h2 class="title">Our community</h2>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel finibus diam, vel ullamcorper ligula. Sed vel fermentum ipsum, sit amet condimentum eros. Donec sed ipsum vel felis faucibus pellentesque. Integer auctor libero at ipsum rutrum, a convallis metus ullamcorper. Integer consectetur, tortor at ullamcorper posuere, felis neque malesuada ligula, at vulputate nisi velit vel turpis. Sed dignissim, mauris vel feugiat bibendum, lectus nunc condimentum felis, vel hendrerit diam dui et velit. Donec vulputate, erat in sagittis malesuada, nisi metus pellentesque nisi, vel cursus orci neque eu neque. Nulla facilisi. Sed ultricies, diam vel cursus lobortis, ligula tellus faucibus ex, ut fe
+                    <ul class="customers-list">
+                        <li><img src="" alt=""><p></p></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="2b5d0000-848d-4361-b277-887b4bcd874f">
+
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" name="phone" placeholder="Phone (not required)">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Message" required></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <input class="submit" type="submit" value="Send">
+                        <input class="clear" type="reset" value="Clear">
+                    </div>
+                </form>
             </section>
         </main>
 
         <footer>
-            <div>
-                <img id="userImage" src="assets/images/microsoft-pilot.jpeg" alt="Image">
-                <div id="shape" class="circle"></div>
-            </div>
+            <p class="copyright">&copy; 2024 P All rights reserved.</p>
         </footer>
         <script src="assets/js/index.js"></script>
-        <script src="assets/js/home.js"></script>
     </body>
 </html>

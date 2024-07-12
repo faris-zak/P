@@ -61,10 +61,16 @@ main section.contact-info table tr td a:hover i{
 
 
 
-/* main section.contact-form{
+main section.contact-form{
     position: absolute;
     width: 300px;
-    transform: translate(500px, -250px);
+    transform: translate(550px, -450px);
+}
+
+main section.contact-form p{
+    font-size: 18px;
+    color: #c4c4c4;
+    opacity: 0.8;
 }
 
 .form-group {
@@ -132,7 +138,7 @@ input.clear:hover{
     background-color: #e8eaea;
     color: black;
     border: 1.6px solid #e8eaea;
-} */
+}
 
 footer div img{
     user-select: none;

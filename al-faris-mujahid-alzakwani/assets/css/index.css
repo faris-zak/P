@@ -49,6 +49,16 @@ nav{
     transform: scale(0.95);
 }
 
+.profile-icon span.name{
+    user-select: none;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0;
+    transform: translate(-60px, 28.5px);
+    z-index: -1;
+}
+
 .pages{
     display: inline-block;
 }

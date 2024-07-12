@@ -11,36 +11,42 @@ body{
     margin: 0;
     color: #e8eaea;
     background-color: #0c0e18;
+    text-align: center;
 }
 
-div.smallScreen{
-    display: none;
+header{
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+section{
+    text-align: center;
+    margin: auto;
+    justify-content: center;
 }
 
 nav{
-    user-select: none;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
     padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    display: flex;
-    align-items: left;
-    justify-content: left;
     padding-bottom: 30px;
 }
-
 
 nav div.site-icon div.shape{
     user-select: none;
     width: 700px;
     height: 700px;
     border-radius: 50%;
-    display: inline-block;
     background-color: #c4c4c4;
     opacity: 0.3;
-    position: absolute;
-    left: 0%;
-    transform: translateX(-380px);
-    top: -380px;
+    position: fixed;
+    top: -250px;
+    right: 50%;
     z-index: -1;
     transition: all 2s ease;
 }
@@ -69,9 +75,20 @@ nav div.sections-buttons ul li a{
     font-weight: 500;
     background-color: transparent;
     color: #e8eaea;
-    border: 1.6px solid #0c0e18;
+    border: none;
     border-radius: 18px;
-    margin: 5px;
+}
+
+nav div.sections-buttons ul li a.beta{
+    user-select: none;
+    cursor: default;
+    padding: 2px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: #e8eaea;
+    color: black;
+    border: 1.6px solid #e8eaea;
 }
 
 nav div.sections-buttons ul li a:hover{
@@ -80,10 +97,25 @@ nav div.sections-buttons ul li a:hover{
     border: 1.6px solid #e8eaea;
 }
 
+nav div.sections-buttons ul li a.beta:hover{
+    background-color: transparent;
+    cursor: default;
+    color: #e8eaea;
+    border: 1.6px solid #e8eaea;
+}
+
+header{
+    max-width: 700px;
+    margin-bottom: 80px;
+}
+
+header h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
 main section.contact-form{
-    /* position: absolute; */
     width: 300px;
-    /* transform: translate(500px, -250px); */
 }
 
 .form-group {
@@ -153,37 +185,27 @@ input.clear:hover{
     border: 1.6px solid #e8eaea;
 }
 
+main section div{
+    margin-bottom: 80px;
+}
+
+main section.our-community ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+main section.our-community ul li a{
+    color: #c4c4c4;
+    text-decoration: none;
+}
+
+main section.our-community ul li a:hover{
+    color: #e8eaea;
+    text-decoration: underline;
+}
 
 
 @media screen and (max-width: 1023px){
-    nav, main, footer, a{
-        display: none;
-    }
-
-    div.smallScreen{
-        user-select: none;
-        display: block;
-        padding: 0;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    div.smallScreen img.screens{
-        width: 200px;
-        margin: 20% 0;
-        margin-bottom: 32px;
-    }
-
-    div.smallScreen span.h2{
-        font-size: 26px;
-        font-weight: 600;
-    }
-
-    div.smallScreen p.detail{
-        font-size: 18px;
-        font-weight: 500;
-        color: #585858;
-    }
+    
 }

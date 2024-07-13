@@ -224,7 +224,7 @@ input.clear:hover{
 }
 
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 600px){
     nav div.site-icon img#siteIcon{
         width: 130px;
     }

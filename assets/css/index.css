@@ -37,6 +37,10 @@ nav{
     padding-bottom: 30px;
 }
 
+nav div.site-icon img#siteIcon{
+    width: 170px;
+}
+
 nav div.site-icon div.shape{
     user-select: none;
     width: 700px;
@@ -71,7 +75,7 @@ nav div.sections-buttons ul li a{
     cursor: pointer;
     text-decoration: none;
     padding: 6px 16px;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
     background-color: transparent;
     color: #e8eaea;
@@ -114,8 +118,32 @@ header h2{
     font-weight: 400;
 }
 
+main section div{
+    margin-bottom: 80px;
+}
+
+main section h2.title{
+    font-size: 24px;
+}
+
+main section.our-community ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+main section.our-community ul li a{
+    color: #c4c4c4;
+    text-decoration: none;
+}
+
+main section.our-community ul li a:hover{
+    color: #e8eaea;
+    text-decoration: underline;
+}
+
 main section.contact-form{
-    width: 300px;
+    width: auto;
 }
 
 .form-group {
@@ -130,7 +158,7 @@ main section.contact-form{
 .form-group input,
 .form-group textarea {
     background-color: transparent;
-    width: 100%;
+    width: 300px;
     padding: 12px;
     border: 1px solid #c4c4c4;
     border-radius: 8px;
@@ -146,7 +174,7 @@ main section.contact-form{
 
 .form-buttons {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     width: 100%;
 }
 
@@ -185,27 +213,38 @@ input.clear:hover{
     border: 1.6px solid #e8eaea;
 }
 
-main section div{
-    margin-bottom: 80px;
-}
 
-main section.our-community ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-main section.our-community ul li a{
-    color: #c4c4c4;
-    text-decoration: none;
-}
-
-main section.our-community ul li a:hover{
-    color: #e8eaea;
-    text-decoration: underline;
-}
-
-
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 420px){
+    nav div.site-icon img#siteIcon{
+        width: 130px;
+    }
     
+    nav{
+        padding: 20px 0;
+    }
+
+    nav div.sections-buttons ul li{
+        padding: 0;
+    }
+
+    nav div.sections-buttons ul li a{
+        font-size: 16px;
+    }
+
+    header{
+        padding: 0 20px;
+    }
+
+    header h2{
+        font-size: 22px;
+    }
+
+    main section.our-community{
+        padding: 0 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 80%;
+    }
 }

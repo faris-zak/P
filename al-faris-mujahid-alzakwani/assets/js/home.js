@@ -39,3 +39,30 @@ shape.addEventListener('click', () => {
         shape.style.transform = 'translateX(0px)';
     }
 });
+
+
+
+function applyStyles(x) {
+
+  if (x.matches) { 
+      window.onload = () =>{
+      shape.style.transform = 'translateY(-100px) translateX(400px)';
+      userImage.style.transform = 'translateY(200px) translateX(-300px)';
+      userImage.style.opacity = '1';
+      mainContent.style.transform = 'translateY(0)';
+      mainContent.style.opacity = '1';
+    };
+
+    userImage.style.transform = 'translateY(200px) translateX(-300px)';
+    shape.style.transform = 'translateY(-100px) translateX(400px)';
+
+  } else {
+
+    userImage.style.transform = 'translateX(0)';
+    shape.style.transform = 'translateY(0)';
+  }
+}
+
+const x = window.matchMedia("(max-width: 450px)");
+applyStyles(x); // Call listener function at run time
+x.addListener(applyStyles); // Attach listener function on state changes

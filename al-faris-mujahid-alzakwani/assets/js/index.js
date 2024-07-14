@@ -3,6 +3,7 @@ const socialMedia = document.getElementById('socialMedia');
 const smIcons = document.getElementById('smIcons');
 const name = document.querySelector('span.name');
 
+
 userIcon.addEventListener('click', () => {
   if(socialMedia.style.opacity === '1'){
     userIcon.style.boxShadow = 'none';

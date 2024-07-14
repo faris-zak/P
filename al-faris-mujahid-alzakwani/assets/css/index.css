@@ -84,7 +84,7 @@ nav div.dropdown input.dropBtn:checked + svg .lineBottom{
 }
 
 nav div.dropdown div.dropdownContent{
-    position: absolute;
+    position: fixed;
     transform: translateX(150%);
     background-color: #0c0e1881;
     min-width: 160px;
@@ -286,6 +286,21 @@ footer div .circle{
     transition: all 2s ease;
 }
 
+
+@media screen and (max-width: 350px){
+
+    .nav-buttons a{
+        font-size: 15.5px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    nav .nav-buttons{
+        display: grid;
+    }
+}
+
 @media screen and (max-width: 1023px){
 
     nav{
@@ -310,19 +325,5 @@ footer div .circle{
 
     nav div.dropdownContent a{
         font-size: 17px;
-    }
-}
-
-@media screen and (max-width: 500px){
-
-    nav .nav-buttons{
-        display: grid;
-    }
-}
-
-@media screen and (max-width: 350px){
-
-    .nav-buttons a{
-        font-size: 15.5px;
     }
 }

@@ -41,7 +41,6 @@ shape.addEventListener('click', () => {
 });
 
 
-
 function applyStyles(x) {
 
   if (x.matches) { 
@@ -64,5 +63,5 @@ function applyStyles(x) {
 }
 
 const x = window.matchMedia("(max-width: 450px)");
-applyStyles(x); // Call listener function at run time
-x.addListener(applyStyles); // Attach listener function on state changes
+applyStyles(x);
+x.addListener(applyStyles);

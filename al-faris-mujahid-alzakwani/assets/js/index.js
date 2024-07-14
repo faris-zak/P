@@ -20,3 +20,14 @@ userIcon.addEventListener('click', () => {
         socialMedia.style.transform = 'translateX(26px)';
     }
 });
+
+const dropDownBtn = document.querySelector('.dropBtn');
+const dropdownContent = document.querySelector('.dropdownContent');
+
+dropDownBtn.addEventListener('change', function(){
+  if(this.checked){
+    dropdownContent.style.transform = 'translateX(0%)';
+  } else{
+    dropdownContent.style.transform = 'translateX(150%)';
+  }
+});

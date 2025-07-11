@@ -125,17 +125,24 @@ nav div.dropdown div.dropdownContent a:active{
     text-decoration: none;
 }
 
+.profile-icon img#userIcon-1{
+    background-color: #c4c4c4;
+    padding: 10px;
+    border-radius: 10px;
+    width: 60px;
+}
+
+.profile-icon img#userIcon-1:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(150, 150, 150, 0.5);
+}
+
 .profile-icon img#userIcon-2{
     width: 70px;
     opacity: 1;
     z-index: -1;
     position: absolute;
     transform: translate(-75px, 7px);
-}
-
-.profile-icon img:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(150, 150, 150, 0.5);
 }
 
 .profile-icon img:active{

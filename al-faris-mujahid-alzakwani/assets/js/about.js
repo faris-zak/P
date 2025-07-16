@@ -11,7 +11,10 @@ const hoppies = document.querySelector('section.hoppies');
 links.forEach(link => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
-      mainContent.style.opacity = '0';
+    mainContent.style.opacity = '0';
+    userImage.style.transform = 'translateX(0)';
+    userImage.style.maxWidth = '800px';
+    shape.style.transform = 'translateY(0)';
 
     setTimeout(() => {
       window.location.href = event.target.href;

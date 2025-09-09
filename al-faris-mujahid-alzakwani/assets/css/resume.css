@@ -22,16 +22,16 @@ main section.intro p{
     opacity: 0.8;
 }
 
-main section.embedded-cv embed{
+main section.embedded-resume embed{
     border-radius: 20px;
 }
 
-main section.control-cv{
+main section.control-resume{
     position: absolute;
     transform: translate(530px, -580px);
 }
 
-main section.control-cv a{
+main section.control-resume a{
     cursor: pointer;
     text-decoration: none;
     padding: 6px 16px;
@@ -42,25 +42,25 @@ main section.control-cv a{
     margin: 5px;
 }
 
-main section.control-cv a.download-cv{
+main section.control-resume a.download-resume{
     background-color: transparent;
     color: #e8eaea;
     border: 1.6px solid #e8eaea;
 }
 
-main section.control-cv a.download-cv:hover{
+main section.control-resume a.download-resume:hover{
     background-color: #e8eaea;
     color: black;
     border: 1.6px solid #e8eaea;
 }
 
-main section.control-cv a.print-cv{
+main section.control-resume a.print-resume{
     background-color: transparent;
     color: #e8eaea;
     border: 1.6px solid #e8eaea;
 }
 
-main section.control-cv a.print-cv:hover{
+main section.control-resume a.print-resume:hover{
     background-color: #e8eaea;
     color: black;
     border: 1.6px solid #e8eaea;

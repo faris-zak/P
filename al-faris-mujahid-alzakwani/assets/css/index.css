@@ -215,13 +215,13 @@ nav div.dropdown div.dropdownContent a:active{
     margin: 5px;
 }
 
-.nav-buttons a.download{
+.nav-buttons a.my-resume{
     background-color: transparent;
     color: #e8eaea;
     border: 1.6px solid #e8eaea;
 }
 
-.nav-buttons a.download:hover{
+.nav-buttons a.my-resume:hover{
     background-color: #e8eaea;
     color: black;
     border: 1.6px solid #e8eaea;

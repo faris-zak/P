@@ -3,7 +3,7 @@ const shape = document.getElementById('shape');
 const mainContent = document.querySelector('main');
 const links = document.querySelectorAll('a.fade');
 const introSection = document.querySelector('section.intro');
-const cvSection = document.querySelector('section.embedded-cv');
+const resumeSection = document.querySelector('section.embedded-resume');
 
 
 links.forEach(link => {

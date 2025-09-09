@@ -6,8 +6,6 @@ const introSection = document.querySelector('section.intro');
 const infoTable = document.querySelector('section.info-table');
 const hoppies = document.querySelector('section.hoppies');
 
-
-
 links.forEach(link => {
   link.addEventListener('click', (event) => {
     event.preventDefault();

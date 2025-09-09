@@ -76,7 +76,7 @@ nav div.sections-buttons ul li a{
     text-decoration: none;
     padding: 6px 16px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     background-color: transparent;
     color: #e8eaea;
     border: none;
@@ -88,7 +88,6 @@ nav div.sections-buttons ul li a.beta{
     cursor: default;
     padding: 2px 10px;
     font-size: 16px;
-    font-weight: 500;
     border-radius: 8px;
     background-color: #e8eaea;
     color: black;
@@ -98,7 +97,6 @@ nav div.sections-buttons ul li a.beta{
 nav div.sections-buttons ul li a:hover{
     background-color: #e8eaea;
     color: black;
-    border: 1.6px solid #e8eaea;
 }
 
 nav div.sections-buttons ul li a.beta:hover{
@@ -140,16 +138,17 @@ main section.our-community ul li a{
 main section.our-community ul li a span:last-child{
     opacity: 0;
     margin-left: -10px;
+    
 }
 
 main section.our-community ul li a:hover span:last-child{
     opacity: 1;
     padding-left: 15px;
+    text-decoration: none;
 }
 
 main section.our-community ul li a:hover{
     color: #e8eaea;
-    text-decoration: underline;
 }
 
 main section.contact-form{
@@ -203,6 +202,7 @@ input.submit{
     background-color: #e8eaea;
     color: black;
     border: 1.6px solid #e8eaea;
+    font-weight: 600;
 }
 
 input.submit:hover {
@@ -215,6 +215,7 @@ input.clear {
     background-color: transparent;
     color: #e8eaea;
     border: 1.6px solid #e8eaea;
+    font-weight: 600;
 }
 
 input.clear:hover{

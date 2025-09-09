@@ -119,6 +119,7 @@ main section.contact-form p{
 input.submit{
     background-color: #e8eaea;
     color: black;
+    font-weight: 600;
     border: 1.6px solid #e8eaea;
 }
 
@@ -130,6 +131,7 @@ input.submit:hover {
 input.clear {
     background-color: transparent;
     color: #e8eaea;
+    font-weight: 600;
     border: 1.6px solid #e8eaea;
 }
 

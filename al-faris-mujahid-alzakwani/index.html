@@ -7,6 +7,8 @@
         <title>P | Home (Al-Faris Mujahid AlZakwani)</title>
         <link rel="stylesheet" href="assets/css/index.css">
         <link rel="stylesheet" href="assets/css/home.css">
+        <link rel="stylesheet" href="assets/css/resume-phone.css">
+        <link rel="stylesheet" href="assets/css/contact-phone.css">
         <link rel="icon" href="assets/images/icon.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css'>
@@ -32,35 +34,10 @@
             </div>
 
             <div class="nav-buttons">
-                <a class="my-resume" href="resume.html">My Resume</a>
-                <a class="fade" href="contact.html">Contact Me</a>
-            </div>
-
-            <div class="dropdown" style="float: right;" dir="rtl">
-                <input class="dropBtn" type="checkbox"/>
-                <svg fill="none" viewBox="0 0 50 50" height="38" width="38">
-                  <path class="lineTop line" stroke-linecap="round" stroke-width="4" stroke="black" d="M6 11L44 11"></path>
-                  <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 24H43" class="lineMid line"></path>
-                  <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 37H43" class="lineBottom line"></path>
-                </svg>
-                <div class="dropdownContent">
-                    <a class="site" href="#" title="Home">Home</a>
-                    <a class="site" href="about.html" title="About">About</a>
-                    <a class="site" href="experiences.html" title="Experiences">Experiences</a>
-                    <a class="site" href="education.html" title="Education">Education</a>
-                    <a class="site" href="skills.html" title="Skills">Skills</a>
-                    <a class="site" href="certificates.html" title="CV">Certificates</a>
-                </div>
+                <a class="my-resume" href="#resume">My Resume</a>
+                <a class="fade" href="#contact">Contact Me</a>
             </div>
         </nav>
-
-        <div class="smallScreen">
-            <img class="screens" src="assets/images/small-screen-mockup.png" alt="Phones & Tablets">
-            <div class="details">
-                <span class="h2">P small screens aren't available!</span>
-                <p class="detail">In the meantime, use a screen with a width above <strong>1200 pixels</strong> to get a better experience.</p>
-            </div>
-        </div>
 
         <div id="socialMedia" class="sidebar">
             <ul class="social-media-icons">
@@ -87,6 +64,71 @@
                             <a class="fade" href="about.html">More about me</a>
                         </div>
                 </div>
+            </section>
+
+            <section class="phone-intro">
+                <div class="phone-intro-header">
+                    <h3>Welcome, I'm</h3>
+                    <h1>Al-Faris Mujahid</h1>
+                </div>
+                <div class="phone-intro-info">
+                    <p>You are viewing small screen mode</p>
+                </div>
+            </section>
+
+            <hr style="margin: 50px 0; border: 0.5px solid #c4c4c4;">
+
+            <section class="resume" id="resume">
+                <div class="resume-header">
+                    <h1>My Resume</h1>
+                    <p>You can check my resume as a PDF file or download it.</p>
+                </div>
+                
+                <div class="embedded-resume">
+                    <embed src="assets/pdf/resume.pdf" type="application/pdf" width="800px" height="500px">
+                </div>
+
+                <div class="control-resume">
+                    <a class="download-resume" href="assets/pdf/resume.pdf" download="resume.pdf">Download as PDF</a>
+                    <a class="print-resume" href="assets/pdf/resume.pdf" print="resume.pdf" target="_blank">Print</a>
+                </div>
+            </section>
+
+            <hr style="margin: 50px 0; border: 0.5px solid #c4c4c4;">
+
+            <section class="contact-form" id="contact">
+                <div class="contact-header">
+                    <h1>Contact</h1>
+                    <p>Contact me directly by filling out the form below:</p>
+                </div>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="614e7d5a-7d72-41ed-b824-81e927d7965d">
+                    <input type="hidden" name="redirect" value="https://faris-zak.github.io/P/al-faris-mujahid-alzakwani/submitted-form.html">
+                    <input type="hidden" name="from_name" value="P | Message to Al-Faris">
+                    <input type="hidden" name="subject" value="Someone Contacted You!">
+
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Phone (not required)">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email (not required)">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Message" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <input class="submit" type="submit" value="Send">
+                        <input class="clear" type="reset" value="Clear">
+                    </div>
+                </form>
             </section>
         </main>
 

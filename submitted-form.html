@@ -26,13 +26,11 @@
         }
     </style>
 </head>
-<body>
+<body onload="redirectToHome()">
     <h1>Your Request Submitted Successfully!</h1>
     <p>Thank you for contacting us. You will be redirected to the homepage shortly.</p>
     <p>If you are not automatically redirected, <a href="index.html">click here!</a></p>
     <script>
-        redirectToHome();
-        
         function redirectToHome() {
             setTimeout(function() {
                 window.location.href = 'index.html';

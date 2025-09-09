@@ -123,9 +123,8 @@ input.submit{
 }
 
 input.submit:hover {
-    background-color: transparent;
-    color: #e8eaea;
-    border: 1.6px solid #e8eaea;
+    background-color: #e8eaeabd;
+    color: black;
 }
 
 input.clear {

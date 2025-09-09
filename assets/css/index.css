@@ -224,6 +224,10 @@ input.clear:hover{
     border: 1.6px solid #e8eaea;
 }
 
+footer p.copyright{
+    cursor: default;
+}
+
 
 @media screen and (max-width: 600px){
     nav div.site-icon img#siteIcon{

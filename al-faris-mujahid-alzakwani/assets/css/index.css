@@ -274,23 +274,15 @@ footer div .circle{
         color: #e8eaea;
         font-size: 26px;
     }
-
-    nav div.dropdown{
-        display: block;
-    }
-
-    nav div.dropdownContent a{
-        font-size: 17px;
-    }
 }
 
 @media screen and (max-width: 1200px) {
     .nav-buttons a:last-child{
         display: none;
     }
-    
+
     .nav-buttons a.contact-me{
-        display: block;
+        display: inline-block;
     }
 
     .nav-buttons a.my-resume{
@@ -298,8 +290,7 @@ footer div .circle{
     }
 
     .nav-buttons a.resume{
-        display: block;
-    }
+        display: inline-block;
 }
 
 @media screen and (max-width: 1400px){

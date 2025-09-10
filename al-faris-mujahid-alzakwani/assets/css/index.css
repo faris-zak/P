@@ -243,7 +243,7 @@ footer div .circle{
 
 @media screen and (max-width: 500px){
     nav .nav-buttons{
-        display: inline-block;
+        display: grid;
     }
 }
 
@@ -282,7 +282,7 @@ footer div .circle{
     }
 
     .nav-buttons a.contact-me{
-        display: block;
+        display: inline-block;
     }
 
     .nav-buttons a.my-resume{
@@ -290,7 +290,7 @@ footer div .circle{
     }
 
     .nav-buttons a.resume{
-        display: block;
+        display: inline-block;
 }
 
 @media screen and (max-width: 1400px){

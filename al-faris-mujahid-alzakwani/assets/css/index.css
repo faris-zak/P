@@ -241,11 +241,7 @@ footer div .circle{
     }
 }
 
-@media screen and (max-width: 500px){
-    nav .nav-buttons{
-        display: grid;
-    }
-}
+/*10-9-25*/
 
 @media screen and (max-width: 1150px){
     nav{

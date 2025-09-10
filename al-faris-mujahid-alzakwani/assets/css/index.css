@@ -241,7 +241,11 @@ footer div .circle{
     }
 }
 
-/*10-9-25*/
+@media screen and (max-width: 500px){
+    nav .nav-buttons{
+        display: inline-block;
+    }
+}
 
 @media screen and (max-width: 1150px){
     nav{
@@ -269,14 +273,6 @@ footer div .circle{
     .sidebar .social-media-icons li a i{
         color: #e8eaea;
         font-size: 26px;
-    }
-
-    nav div.dropdown{
-        display: block;
-    }
-
-    nav div.dropdownContent a{
-        font-size: 17px;
     }
 }
 

@@ -285,13 +285,20 @@ footer div .circle{
 }
 
 @media screen and (max-width: 1200px) {
-    .nav-buttons a.my-resume, a:last-child{
+    .nav-buttons a:last-child{
         display: none;
     }
-    
-    .nav-buttons a.contact-me, a.resume{
+
+    .nav-buttons a.contact-me{
         display: block;
     }
+
+    .nav-buttons a.my-resume{
+        display: none;
+    }
+
+    .nav-buttons a.resume{
+        display: block;
 }
 
 @media screen and (max-width: 1400px){

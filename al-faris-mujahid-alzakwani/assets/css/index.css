@@ -290,7 +290,7 @@ footer div .circle{
     }
     
     .nav-buttons a.contact-me, a.resume{
-        display: inline-block;
+        display: fixed;
     }
 }
 

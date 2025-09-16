@@ -292,6 +292,7 @@ footer div .circle{
     .nav-buttons a.resume{
         display: inline-block;
 }
+}
 
 @media screen and (max-width: 1400px){
         .profile-icon img#userIcon-2{

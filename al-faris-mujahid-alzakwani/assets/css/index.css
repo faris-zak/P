@@ -1,5 +1,4 @@
 *{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     transition: all 0.3s ease;
 }
 
@@ -11,6 +10,7 @@ body{
     margin: 0;
     color: #e8eaea;
     background-color: #0c0e18;
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 div.smallScreen{
@@ -26,91 +26,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding-bottom: 30px;
-}
-
-nav div.dropdown{
-    display: none;
-    height: 32px;
-    width: 32px;
-    position: relative;
-}
-
-nav div.dropdown input.dropBtn{
-    position: absolute;
-    opacity: 0;
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-}
-
-nav div.dropdown .line{
-    transition: 0.5s;
-    stroke-width: 5px;
-    stroke: #e8e1d9;
-}
-
-nav div.dropdown .lineTop{
-    stroke-dasharray: 40 40;
-    stroke-dashoffset: 25;
-}
-
-nav div.dropdown .lineBottom{
-    stroke-dasharray: 40 40;
-    stroke-dashoffset: 60;
-}
-
-nav div.dropdown .lineMid{
-    stroke-dasharray: 40 40;
-}
-
-nav div.dropdown input.dropBtn:checked + svg .line {
-    stroke: crimson;
-}
-
-nav div.dropdown input.dropBtn:checked + svg .lineTop{
-    stroke-dashoffset: 0;
-    transform-origin: left;
-    transform: rotateZ(45deg) translate(-7px, -5px);
-}
-
-nav div.dropdown input.dropBtn:checked + svg .lineMid{
-    stroke-dashoffset: 40;
-}
-
-nav div.dropdown input.dropBtn:checked + svg .lineBottom{
-    stroke-dashoffset: 0;
-    transform-origin: left;
-    transform: rotateZ(-45deg) translate(-5px, 5px);
-}
-
-nav div.dropdown div.dropdownContent{
-    position: fixed;
-    transform: translateX(150%);
-    background-color: #0c0e1881;
-    min-width: 160px;
-    border-radius: 8px;
-    z-index: 1;
-}
-
-nav div.dropdown div.dropdownContent a{
-    display: block;
-    color: #e8eaea;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    padding: 10px 12px;
-    text-decoration: none;
-}
-
-nav div.dropdown div.dropdownContent a:hover{
-    border-radius: 4px;
-    color: #0c0e18;
-    background-color: #e8e1d9;
-}
-
-nav div.dropdown div.dropdownContent a:active{
-    color: #c4c4c4;
-    background-color: #0c0e18;
 }
 
 .profile-icon{
@@ -209,25 +124,44 @@ nav div.dropdown div.dropdownContent a:active{
     text-decoration: none;
     padding: 6px 16px;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 600;
     border: none;
     border-radius: 18px;
     margin: 5px;
 }
 
-.nav-buttons a.download{
+.nav-buttons a.my-resume{
     background-color: transparent;
     color: #e8eaea;
     border: 1.6px solid #e8eaea;
 }
 
-.nav-buttons a.download:hover{
+.nav-buttons a.my-resume:hover{
+    background-color: #e8eaea;
+    color: black;
+    border: 1.6px solid #e8eaea;
+}
+
+.nav-buttons a.resume{
+    display: none;
+    background-color: transparent;
+    color: #e8eaea;
+    border: 1.6px solid #e8eaea;
+}
+
+.nav-buttons a.resume:hover{
     background-color: #e8eaea;
     color: black;
     border: 1.6px solid #e8eaea;
 }
 
 .nav-buttons a:last-child{
+    background-color: #e8eaea;
+    color: black;
+}
+
+.nav-buttons a.contact-me{
+    display: none;
     background-color: #e8eaea;
     color: black;
 }
@@ -264,7 +198,6 @@ nav div.dropdown div.dropdownContent a:active{
 .sidebar .social-media-icons li a i{
     color: #e8eaea;
     font-size: 32px;
-
 }
 
 .sidebar .social-media-icons li:hover{
@@ -314,9 +247,13 @@ footer div .circle{
     }
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1150px){
     nav{
-        padding: 10px;
+        padding: 15px;
+    }
+
+    .profile-icon img#userIcon-1{
+        width: 55px;
     }
 
     .pages{
@@ -324,66 +261,46 @@ footer div .circle{
     }
 
     .sidebar{
-        display: none;
+        z-index: 1;
+        transform: translateX(-70px);
     }
 
-    nav div.dropdown{
-        display: block;
+    .sidebar .social-media-icons li{
+        padding: 15px;
+        padding-top: 0;
     }
 
-    nav div.dropdownContent a{
-        font-size: 17px;
-    }
-}
-
-@media screen and (max-width: 1200px){
-        nav, main, footer, a{
-        display: none;
-    }
-
-    div.smallScreen{
-        user-select: none;
-        display: block;
-        padding: 0;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        align-items: center;
-        justify-content:center;
-        flex-direction: column;
-    }
-
-    div.smallScreen img.screens{
-        width: 200px;
-        margin: 20% 0;
-        margin-bottom: 32px;
-    }
-
-    div.smallScreen div.details{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    div.smallScreen span.h2{
+    .sidebar .social-media-icons li a i{
+        color: #e8eaea;
         font-size: 26px;
-        font-weight: 600;
-
-    }
-
-    div.smallScreen p.detail{
-        font-size: 18px;
-        font-weight: 500;
-        color: #585858;
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .nav-buttons a:last-child{
+        display: none;
+    }
 
-@media screen and (max-width: 1650px){
+    .nav-buttons a.contact-me{
+        display: inline-block;
+    }
+
+    .nav-buttons a.my-resume{
+        display: none;
+    }
+
+    .nav-buttons a.resume{
+        display: inline-block;
+}
+}
+
+@media screen and (max-width: 1400px){
+        .profile-icon img#userIcon-2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1850px){
     .profile-icon span.name{
         display: none;
     }

@@ -3,8 +3,8 @@ const shape = document.getElementById('shape');
 const mainContent = document.querySelector('main');
 const links = document.querySelectorAll('a.fade');
 const introSection = document.querySelector('section.intro');
-const infoTable = document.querySelector('section.info-table');
-const hoppies = document.querySelector('section.hoppies');
+const resumeSection = document.querySelector('section.embedded-resume');
+
 
 links.forEach(link => {
   link.addEventListener('click', (event) => {
@@ -23,9 +23,6 @@ links.forEach(link => {
 window.onload = () =>{
     userImage.style.transform = 'translateX(300px) translateY(300px)';
     userImage.style.maxWidth = '500px';
-    introSection.style.transform = 'translateX(-120px)';
-    infoTable.style.transform = 'translateX(-120px)';
-    hoppies.style.transform = 'translateY(60px)';
     shape.style.transform = 'translateX(-200px)';
     mainContent.style.opacity = '1';
 };

@@ -22,45 +22,45 @@ main section.intro p{
     opacity: 0.8;
 }
 
-main section.embedded-cv embed{
+main section.embedded-resume embed{
     border-radius: 20px;
 }
 
-main section.control-cv{
+main section.control-resume{
     position: absolute;
     transform: translate(530px, -580px);
 }
 
-main section.control-cv a{
+main section.control-resume a{
     cursor: pointer;
     text-decoration: none;
     padding: 6px 16px;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 600;
     border: none;
     border-radius: 8px;
     margin: 5px;
 }
 
-main section.control-cv a.download-cv{
+main section.control-resume a.download-resume{
     background-color: transparent;
     color: #e8eaea;
     border: 1.6px solid #e8eaea;
 }
 
-main section.control-cv a.download-cv:hover{
+main section.control-resume a.download-resume:hover{
     background-color: #e8eaea;
     color: black;
     border: 1.6px solid #e8eaea;
 }
 
-main section.control-cv a.print-cv{
+main section.control-resume a.print-resume{
     background-color: transparent;
     color: #e8eaea;
     border: 1.6px solid #e8eaea;
 }
 
-main section.control-cv a.print-cv:hover{
+main section.control-resume a.print-resume:hover{
     background-color: #e8eaea;
     color: black;
     border: 1.6px solid #e8eaea;
@@ -94,4 +94,50 @@ footer div .circle{
     right: 75%;
     z-index: -1;
     transition: all 2s ease;
+}
+
+@media screen and (max-width: 1200px){
+        nav, main, footer, a{
+        display: none;
+    }
+
+    div.smallScreen{
+        user-select: none;
+        display: block;
+        padding: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+    }
+
+    div.smallScreen img.screens{
+        width: 200px;
+        margin: 20% 0;
+        margin-bottom: 32px;
+    }
+
+    div.smallScreen div.details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    div.smallScreen span.h2{
+        font-size: 26px;
+        font-weight: 600;
+
+    }
+
+    div.smallScreen p.detail{
+        font-size: 18px;
+        font-weight: 500;
+        color: #585858;
+    }
 }

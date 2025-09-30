@@ -3,30 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="P, the first website that provides a personal portfolio showcasing your projects, and skills, and CV into a website for FREE!">
+        <meta name="description" content="P, the first Omani website that provides a personal portfolio showcasing your projects, and skills, and CV into a website for just 1$ onetime payment!">
+        <meta name="author" content="Al-Faris Mujahid AlZakwani">
         <title>P</title>
         <link rel="stylesheet" href="assets/css/index.css">
         <link rel="icon" href="assets/images/icon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     </head>
     <body>
         <nav>
             <div class="site-icon">
                 <div class="shape"></div>
-                <img id="siteIcon" src="assets/images/icon.png" alt="Website Logo (P)">
+                <img id="siteIcon" src="assets/images/icon.png" alt="P Logo">
             </div>
             <div class="sections-buttons">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#ourCommunity">Our Community</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a class="beta">BETA</a></li>
+                    <li><a class="beta" title="Beta Version">BETA</a></li>
                 </ul>
             </div>
         </nav>
 
         <header id="about">
-                <h2>P, the first website that provides a personal portfolio showcasing your projects, and skills, and CV into a website for <em>FREE!</em></h2>
+                <h2>P, the first Omani website that provides a personal portfolio showcasing your projects, skills, and CV into a website <strong>out of cost <em style="text-decoration: underline;">for the first 4 clients!<em/></strong></h2>
         </header>
 
         <main>
@@ -35,16 +37,20 @@
                     <h2 class="title">Our Community</h2>
                     <p class="description">We have many of members in our community uses our service:</p>
                     <ul class="members-list">
-                        <li><a href="https://faris-zak.github.io/P/al-faris-mujahid-alzakwani/"><span style="color: #e8eaea;"><i class="fi fi-rr-user"></i></span> - Al-Faris Mujahid AlZakwani <span><i class="fi fi-rr-address-card"></i></span></a></li>
+                        <li><a href="al-faris-mujahid-alzakwani/index.html"><span style="color: #e8eaea;"><i class="fi fi-rr-user"></i></span> | Al-Faris Mujahid AlZakwani <span><i class="fi fi-rr-address-card"></i></span></a></li>
                     </ul>
                 </div>
             </section>
 
             <section id="contact" class="contact-form">
                 <form action="https://api.web3forms.com/submit" method="POST">
-                    <h2 class="title">Contact</h2>
-                    <p class="description">Contact us for more information</p>
-                    <input type="hidden" name="access_key" value="2b5d0000-848d-4361-b277-887b4bcd874f">
+                    <input type="hidden" name="redirect" value="https://faris-zak.github.io/P/submitted-form.html">
+                    <input type="hidden" name="from_name" value="P | Client Request">
+                    <input type="hidden" name="subject" value="New Client Request!">
+
+                    <h2 class="title">Become our client!</h2>
+                    <p class="description">Fill in your important information to get started.</p>
+                    <input type="hidden" name="access_key" value="614e7d5a-7d72-41ed-b824-81e927d7965d">
 
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Name" required>
@@ -58,10 +64,6 @@
                         <input type="email" name="email" placeholder="Email" required>
                     </div>
 
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Message" required></textarea>
-                    </div>
-
                     <div class="form-buttons">
                         <input class="submit" type="submit" value="Send">
                         <input class="clear" type="reset" value="Clear">
@@ -71,7 +73,7 @@
         </main>
 
         <footer>
-            <p class="copyright">&copy; 2024 P All rights reserved.</p>
+            <p class="copyright">All rights reserved &copy; P 2024-2025</p>
         </footer>
         <script src="assets/js/index.js"></script>
     </body>

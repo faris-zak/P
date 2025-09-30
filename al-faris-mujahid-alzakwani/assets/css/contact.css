@@ -64,7 +64,7 @@ main section.contact-info table tr td a:hover i{
 main section.contact-form{
     position: absolute;
     width: 300px;
-    transform: translate(550px, -450px);
+    transform: translate(550px, -350px);
 }
 
 main section.contact-form p{
@@ -119,18 +119,19 @@ main section.contact-form p{
 input.submit{
     background-color: #e8eaea;
     color: black;
+    font-weight: 600;
     border: 1.6px solid #e8eaea;
 }
 
 input.submit:hover {
-    background-color: transparent;
-    color: #e8eaea;
-    border: 1.6px solid #e8eaea;
+    background-color: #e8eaeabd;
+    color: black;
 }
 
 input.clear {
     background-color: transparent;
     color: #e8eaea;
+    font-weight: 600;
     border: 1.6px solid #e8eaea;
 }
 
@@ -168,4 +169,50 @@ footer div .circle{
     right: 75%;
     z-index: -1;
     transition: all 2s ease;
+}
+
+@media screen and (max-width: 1200px){
+        nav, main, footer, a{
+        display: none;
+    }
+
+    div.smallScreen{
+        user-select: none;
+        display: block;
+        padding: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+    }
+
+    div.smallScreen img.screens{
+        width: 200px;
+        margin: 20% 0;
+        margin-bottom: 32px;
+    }
+
+    div.smallScreen div.details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    div.smallScreen span.h2{
+        font-size: 26px;
+        font-weight: 600;
+
+    }
+
+    div.smallScreen p.detail{
+        font-size: 18px;
+        font-weight: 500;
+        color: #585858;
+    }
 }

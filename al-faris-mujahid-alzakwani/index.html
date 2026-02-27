@@ -44,10 +44,9 @@
         <div id="socialMedia" class="sidebar">
             <ul class="social-media-icons">
                 <li><a id="smIcons" href="https://x.com/AlFarisMujahid_/"><i class="fi fi-brands-twitter-alt" title="X"></i></a></li>
-                <li><a id="smIcons" href="https://learn.microsoft.com/en-us/users/alfaris/"><i class="fi fi-brands-microsoft" title="Microsoft Learn"></i></a></li>
                 <li><a id="smIcons" href="https://g.dev/Al-FarisAlZakwani"><i class="fi fi-brands-google" title="Google Dev."></i></a></li>
                 <li><a id="smIcons" href="https://github.com/faris-zak"><i class="fi fi-brands-github" title="GitHub"></i></a></li> 
-                <li><a id="smIcons" href="https://stackoverflow.com/users/24868074/al-faris-mujahid"><i class="fa-brands fa-stack-overflow" title="Stack Overflow"></i></a></li> 
+                <li><a id="smIcons" href="https://www.linkedin.com/in/al-faris-mujahid-alzakwani-b013283b3"><i class="fa-brands fa-linkedin" title="LinkedIn"></i></a></li>
             </ul>
         </div>
 
@@ -59,8 +58,8 @@
                             <h1>Al-Faris Mujahid</h1>
                         </div>
                         <div class="intro-info">
-                            <p>A recent diploma graduate with excellence and a passionate front-end developer with a solid foundation in software engineering and a growing interest in the space industry. 
-                                I aim to integrate creativity and technology to help build a smarter, more advanced future, with the ultimate goal of becoming an <strong style="text-decoration: solid;">astronaut</strong>.</p>
+                            <p>Physics student at Sultan Qaboos University focused on space systems and future aerospace technologies.
+                                Combining physics, engineering, and software to build real-world experience on the journey toward astronaut programmes and future space missions.</p>
                         </div>
                         <div class="intro-buttons nav-buttons">
                             <a class="fade" href="about.html">More about me</a>
@@ -76,6 +75,7 @@
                 <div class="phone-intro-info">
                     <p style="font-size: 18px;">-You're viewing small screen mode-</p>
                     <p>Accessing P with a screen > 1200px will provide better experience.</p>
+                    <p>For resume access on mobile, use the Resume actions below (Open PDF, Download PDF, Print).</p>
                 </div>
             </section>
 
@@ -86,14 +86,18 @@
                     <h1>My Resume</h1>
                     <p>You can check my resume as a PDF file or download it.</p>
                 </div>
-                
-                <div class="embedded-resume">
-                    <embed src="assets/pdf/resume.pdf" type="application/pdf" width="800px" height="500px">
-                </div>
 
-                <div class="control-resume">
-                    <a class="download-resume" href="assets/pdf/resume.pdf" download="resume.pdf">Download as PDF</a>
-                    <a class="print-resume" href="assets/pdf/resume.pdf" print="resume.pdf" target="_blank">Print</a>
+                <div class="control-resume" aria-label="Resume actions">
+                    <a class="download-resume" href="assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Resume PDF in a new tab">Open PDF</a>
+                    <a class="download-resume" href="assets/pdf/resume.pdf" download="resume.pdf" aria-label="Download Resume PDF">Download PDF</a>
+                    <button class="print-resume" type="button" aria-label="Print this page" onclick="window.print()">Print</button>
+                </div>
+                
+                <div class="embedded-resume" style="margin-top: 40px;">
+                    <div class="pdf-desktop">
+                        <iframe src="assets/pdf/resume.pdf#view=FitH" title="Resume PDF" loading="lazy"></iframe>
+                    </div>
+                    <p class="pdf-note">PDF preview may not load on some mobile browsers. Use “Open PDF” or “Download PDF”.</p>
                 </div>
             </section>
 
@@ -107,7 +111,7 @@
 
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="614e7d5a-7d72-41ed-b824-81e927d7965d">
-                    <input type="hidden" name="redirect" value="https://faris-zak.github.io/P/al-faris-mujahid-alzakwani/submitted-form.html">
+                    <input type="hidden" name="redirect" value="https://faris-zak.github.io/P/submitted-form.html">
                     <input type="hidden" name="from_name" value="P | Message to Al-Faris">
                     <input type="hidden" name="subject" value="Someone Contacted You!">
 
@@ -135,7 +139,7 @@
                 
                 <br>
 
-                <a id="smIcons" href="https://www.paypal.me/alfarismujahid" target="_blank" style="color: #c4c4c4; text-decoration: none;">💙 Tip Me on PayPal <i class="fa-brands fa-paypal" title="Support me on PayPal"></i></a>
+                <a id="smIcons" href="https://www.paypal.me/alfarismujahid" target="_blank" style="color: #c4c4c4; text-decoration: none;">💙 Support Me on PayPal <i class="fa-brands fa-paypal" title="Support me on PayPal"></i></a>
             </section>
         </main>
 
